@@ -1,0 +1,56 @@
+{% extends 'dostup2app/base.html' %}
+
+{% block title %}Сервис создания заявок{% endblock %}
+
+
+{% block content %}
+
+
+<div class="features">
+    <h1>Главная</h1>
+        {% for management in management %}
+        <div class="alert alert-warning">
+            <h3>{{management.name}}<br></h3>
+            {% for department in department %}
+            {% if department.management_id == management.id %}
+                <h4>{{department.name}}<br></h4>
+                {% for emp in employee %}
+                {% if emp.department_id == department.id %}
+                    <p>{{ emp.name_ru}}<p>
+                {% endif %}
+                {% endfor %}
+            {% endif %}
+            {% endfor %}
+
+        </div>
+        {% endfor %}
+
+        {% for department in department %}
+        {% if department.management_id == NULL %}
+            <div class="alert alert-warning">
+                <h3>{{department.name}}<br></h3>
+                {% for emp in employee %}
+                {% if emp.department_id == department.id %}
+                    <p>{{ emp.name_ru}}<p>
+                {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endfor %}
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+

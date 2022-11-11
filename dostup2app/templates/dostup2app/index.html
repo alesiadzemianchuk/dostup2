@@ -1,0 +1,17 @@
+{% extends 'dostup2app/base.html' %}
+
+{% block title %}Сервис создания заявок{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Пройдите регистрацию или авторизацию</h1>
+        <a href="{% url 'signup' %}"><li><i class="fa-solid fa-house"></i>Регистрация</li></a>
+        <a href="{% url 'signin' %}"><li><i class="fa-solid fa-user"></i>Авторизация</li></a>
+
+
+</div>
+{% endblock %}
+
+
+
+

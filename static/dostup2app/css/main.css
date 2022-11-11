@@ -1,0 +1,142 @@
+body {
+  background: #2с2с2с;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.nav-tabs {
+  border: 0;
+}
+
+.nav-link {
+  margin: 0 10px;
+  padding: 10px 5px;
+  transition: 0.3s;
+  color: var(--color-secondary);
+  border-radius: 0;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  border-bottom: 2px solid #b6b6bf;
+}
+
+.nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+nav-link h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+
+.tab-content .tab-header {
+  padding: 30px 0;
+}
+
+aside{
+    float: left;
+    background: #5f5r5f;
+    padding: 3%;
+    width: 20%;
+    height: 200vh;
+    color: #1610f2;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img{
+    width: 120px;
+    float: left;
+}
+
+aside .logo{
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+    position: relative;
+    top: 10px
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+aside ul li {
+    color: #1610f2;
+    display: block;
+    margin-top: 20px;
+    transition: all .3s ease;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: #1610f2;
+    text-decoration: none;
+    transform: scale(1.1)
+}
+
+main .features {
+    float: left;
+    color: #564rrr;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main.features h1 {
+    font-size: 50px;
+}
+
+main.features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.alert-warning{
+    float: left;
+    clear: both;
+    margin: 10px 20%;
+    text-align: left;
+    width: 1000px;
+    color: #564rrr;
+
+}
+
+form {
+    margin-left: 12%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+
+
+
+/**
+* Template Name: Yummy - v1.2.0
+* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Set main reusable colors and fonts using CSS variables
+# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+--------------------------------------------------------------*/
+/* Fonts */
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+
+
+

@@ -1,0 +1,29 @@
+{% extends 'dostup2app/base.html' %}
+{% load static %}
+
+
+{% block title %}Заявки{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <table border="1" width="85%" cellpadding="5">
+
+    <tr>
+        <th>ФИО</th>
+        <th>Отдел</th>
+        <th>Файл</th>
+    </tr>
+    {% for order in order %}
+    {% if order.image %}
+        <tr><td>{{order.employee}}</td><td>{{order.department}}</td><td>{{order.date_created}}</td><td><a href="{{ order.image.url }}" download=""><button>Скачать</button></a></td></tr>
+    {% else %}
+        <tr><td>{{order.employee}}</td><td>{{order.department}}</td><td>{{order.date_created}}</td><td><a>Файл не загружен</button></a></td></tr>
+<!--        <tr><td>{{order.employee}}</td><td>{{order.department}}</td><td>{{order.id}}</td><td><a href="{% url 'script' %}"><button data-text={{order.id}}>Сформировать файл</button></a></td></tr>-->
+    {% endif %}
+    {% endfor %}
+    </table>
+    <a href="{% url 'home' %}"><button class="btn btn-warning">На главную</button></a>
+</div>
+
+{% endblock %}

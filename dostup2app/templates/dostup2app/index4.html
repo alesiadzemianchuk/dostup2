@@ -1,0 +1,38 @@
+{% extends 'dostup2app/base.html' %}
+{% load static %}
+
+
+{% block title %}Форма для заявки{% endblock %}
+
+{% block content %}
+    <div class="features">
+
+        <form method="post">
+            {% csrf_token %}
+            <h3>Заполните заявку</h3>
+            <span class="custom-control-description">Выберите отдел</span> <br>
+            {{ form.department }}<br>
+            <span class="custom-control-description">Выберите сотрудника</span> <br>
+            {{ form.employee }}<br>
+            <span class="custom-control-description">Введите дату</span> <br>
+            {{ form.date_created }}<br>
+
+
+            {{ form.Телефонная_связь }} <span class="custom-control-description">Телефонная связь</span> <br>
+
+
+            {{ form.Электронная_почта }} <span class="custom-control-description">Электронная почта</span><br>
+
+
+
+            <span style="color:red; font-size:16pt">{{ error }}</span>
+            <div class="text-xs-center">
+				<button class="btn btn-block btn-primary" type="submit">Отправить</button>
+			</div>
+        </form>
+        <a href="{% url 'home' %}"><button class="btn btn-warning">На главную</button></a>
+    </div>
+
+
+
+{% endblock %}
